@@ -1,8 +1,9 @@
 import React from 'react'
+import Header from './Header'
 
 const Report = () => {
   return (
-    <div>Report</div>
+    <div><Header>Отчеты</Header></div>
   )
 }
 

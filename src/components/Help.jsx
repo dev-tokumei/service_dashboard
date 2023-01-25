@@ -1,8 +1,9 @@
 import React from 'react'
+import Header from './Header'
 
 const Help = () => {
   return (
-    <div>Help</div>
+    <div><Header>База знаний</Header></div>
   )
 }
 

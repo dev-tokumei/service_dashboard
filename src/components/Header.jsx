@@ -1,14 +1,17 @@
 import React from "react";
-import bell from "../assets/icons/bell.png";
-import user from "../assets/icons/circle-user.svg";
-const Header = () => {
+import NotificationsActiveOutlinedIcon from "@mui/icons-material/NotificationsActiveOutlined";
+import NotificationsNoneOutlinedIcon from "@mui/icons-material/NotificationsNoneOutlined";
+import AccountCircleOutlinedIcon from "@mui/icons-material/AccountCircleOutlined";
+
+const Header = ({ children }) => {
   return (
-    <div className="w-full flex justify-between h-[60px] items-center pt-3 p-2">
-      <h1 className="w-[100px] font-medium text-xl p-5">Заказы</h1>
+    <div className="w-full flex justify-between h-[60px] items-center pt-3 p-2 bg_color">
+      <h1 className="w-[100px] font-bold text-[15px] ">{children}</h1>
       <div className="flex w-[250px] h-full justify-between items-center">
-        <img className="w-[25px] h-[26px] " src={bell} alt="notification" />
-        <p className="text-md ">Smart Client Office</p>
-        <img className="w-[32px] h-[32px]" src={user} alt="user" />
+        <NotificationsActiveOutlinedIcon />
+        <NotificationsNoneOutlinedIcon />
+        <p className="text-[14px] ">Smart Client Office</p>
+        <AccountCircleOutlinedIcon />
       </div>
     </div>
   );

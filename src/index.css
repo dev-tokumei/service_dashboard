@@ -18,6 +18,27 @@ code {
   box-sizing: border-box;
 }
 
+.bg_color {
+  background-color: rgb(35, 44, 40);
+  color: rgb(225, 225, 225);
+}
+
+button {
+  color: white;
+}
+
+
+body {
+  background-color: rgb(35, 44, 40);
+  color: rgb(225, 225, 225);
+}
+
+.border-right {
+  border-right-width: 1px;
+  border-right-style: solid;
+  border-right-color: rgb(57, 65, 61);
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;

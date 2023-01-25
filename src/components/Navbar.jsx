@@ -1,65 +1,92 @@
 import React from "react";
 import logo from "../assets/logo.png";
-import money from "../assets/icons/money.svg";
-import users from "../assets/icons/users.svg";
-import poll from "../assets/icons/poll.svg";
-import cart from "../assets/icons/shopping.svg";
-import inbox from "../assets/icons/move-to-inbox.svg";
-import announcement from "../assets/icons/announcement.png";
-import setting from "../assets/icons/setting.svg";
-import help from "../assets/icons/help.svg";
-import todo from "../assets/icons/todo.png";
 import { Link } from "react-router-dom";
+import AttachMoneyIcon from "@mui/icons-material/AttachMoneyOutlined";
+import PeopleOutlineOutlinedIcon from "@mui/icons-material/PeopleOutlineOutlined";
+import ShoppingCartOutlinedIcon from "@mui/icons-material/ShoppingCartOutlined";
+import MoveToInboxOutlinedIcon from "@mui/icons-material/MoveToInboxOutlined";
+import ViewCompactOutlinedIcon from "@mui/icons-material/ViewCompactOutlined";
+import CheckCircleOutlineOutlinedIcon from "@mui/icons-material/CheckCircleOutlineOutlined";
+import AssessmentOutlinedIcon from "@mui/icons-material/AssessmentOutlined";
+import WhatshotOutlinedIcon from "@mui/icons-material/WhatshotOutlined";
+import SettingsOutlinedIcon from "@mui/icons-material/SettingsOutlined";
+import HelpOutlineOutlinedIcon from "@mui/icons-material/HelpOutlineOutlined";
+import { IconButton } from "@mui/material";
 
 const Navbar = () => {
   return (
-    <nav className="w-[70px] flex flex-col  overflow-auto h-screen justify-between border-r-[1px] border-slate-400 bg-slate-200 fixed">
-      <img src={logo} alt="logo" />
-      <div className="place-self-center ">
-        <Link to="/order">
-          <img className="w-[26px]" src={inbox} alt="каринка" />
-        </Link>
+    <nav className="w-[60px] flex flex-col  overflow-auto h-screen justify-between border-right fixed bg_color">
+      <div className="h-[550px] flex flex-col justify-between">
+        <img className="mt-2 cursor-pointer" src={logo} alt="logo" />
+        <div className="place-self-center h-[40px]">
+          <Link to="/task">
+            <IconButton style={{ color: "white" }}>
+              <CheckCircleOutlineOutlinedIcon />
+            </IconButton>
+          </Link>
+        </div>
+        <div className="place-self-center h-[40px]">
+          <Link to="/order">
+            <IconButton style={{ color: "white" }}>
+              <MoveToInboxOutlinedIcon />
+            </IconButton>
+          </Link>
+        </div>
+        <div className="place-self-center h-[40px]">
+          <Link to="/cashbox">
+            <IconButton style={{ color: "white" }}>
+              <AttachMoneyIcon />
+            </IconButton>
+          </Link>
+        </div>
+        <div className="place-self-center h-[40px]">
+          <Link to="/users">
+            <IconButton style={{ color: "white" }}>
+              <PeopleOutlineOutlinedIcon />
+            </IconButton>
+          </Link>
+        </div>
+        <div className="place-self-center h-[40px]">
+          <Link to="/inventory">
+            <IconButton style={{ color: "white" }}>
+              <ViewCompactOutlinedIcon />
+            </IconButton>
+          </Link>
+        </div>
+        <div className="place-self-center h-[40px]">
+          <Link to="/market">
+            <IconButton style={{ color: "white" }}>
+              <ShoppingCartOutlinedIcon />
+            </IconButton>
+          </Link>
+        </div>
+        <div className="place-self-center h-[40px]">
+          <Link to="/report">
+            <IconButton style={{ color: "white" }}>
+              <AssessmentOutlinedIcon />
+            </IconButton>
+          </Link>
+        </div>
+        <div className="place-self-center h-[40px]">
+          <Link to="/tender">
+            <IconButton style={{ color: "white" }}>
+              <WhatshotOutlinedIcon />
+            </IconButton>
+          </Link>
+        </div>
+        <div className="place-self-center h-[40px]">
+          <Link to="/setting">
+            <IconButton style={{ color: "white" }}>
+              <SettingsOutlinedIcon />
+            </IconButton>
+          </Link>
+        </div>
       </div>
-      <div className="place-self-center ">
-        <Link to="todo">
-          <img className="w-[26px]" src={todo} alt="каринка" />
-        </Link>
-      </div>
-      <div className="place-self-center">
-        <Link to="cashbox">
-          <img className="w-[30px]" src={money} alt="каринка" />
-        </Link>
-      </div>
-
-      <div className="place-self-center">
-        <Link to="users">
-          <img className="w-[26px]" src={users} alt="каринка" />
-        </Link>
-      </div>
-
-      <div className="place-self-center">
-        <Link to="market">
-          <img className="w-28px]" src={cart} alt="каринка" />
-        </Link>
-      </div>
-      <div className="place-self-center">
-        <Link to="repost">
-          <img className="w-[26px]" src={poll} alt="каринка" />
-        </Link>
-      </div>
-      <div className="place-self-center">
-        <Link to="tender">
-          <img className="w-[26px]" src={announcement} alt="каринка" />
-        </Link>
-      </div>
-      <div className="place-self-center">
-        <Link to="setting">
-          <img className="w-[26px]" src={setting} alt="каринка" />
-        </Link>
-      </div>
-      <div className="place-self-center mb-4">
-        <Link to="help">
-          <img className="w-[26px]" src={help} alt="каринка" />
+      <div className="place-self-center mb-8 h-[40px]">
+        <Link to="/help">
+          <IconButton style={{ color: "white" }}>
+            <HelpOutlineOutlinedIcon />
+          </IconButton>
         </Link>
       </div>
     </nav>

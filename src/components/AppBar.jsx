@@ -1,8 +1,10 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import editing from "../assets/icons/editing.png";
-import sort from "../assets/icons/sort.png";
 import SearchInput from "./ui/SearchInput";
+import PlaylistAddOutlinedIcon from "@mui/icons-material/PlaylistAddOutlined";
+import FilterListOutlinedIcon from "@mui/icons-material/FilterListOutlined";
+import ModeEditOutlineOutlinedIcon from "@mui/icons-material/ModeEditOutlineOutlined";
+import { IconButton } from "@mui/material";
 
 const AppBar = () => {
   const Links = [
@@ -13,23 +15,33 @@ const AppBar = () => {
     { name: "Ждут запчасти 📦", link: "/" },
     { name: "Согласование ⏳", link: "/" },
   ];
+
   return (
-    <div className="w-full flex h-[50px] ">
+    <div className="w-full flex h-[50px]">
       <ul className="w-full flex justify-around items-center">
         {Links.map((lnk) => (
           <li key={lnk.name}>
-            <Link className="text-[17px] text-slate-500" href={lnk.link}>
+            <Link
+              className="text-[15px] font-bold text-slate-300"
+              href={lnk.link}
+            >
               {lnk.name}
             </Link>
           </li>
         ))}
-        <SearchInput />
-        <button>
-          <img className="w-[24px] h-[24px]" src={editing} alt="edit" />
-        </button>
-        <button>
-          <img className="w-[24px] h-[24px]" src={sort} alt="sort" />
-        </button>
+        <div className="w-[420px]">
+          <SearchInput />
+        </div>
+
+        <IconButton style={{ color: "white" }}>
+          <ModeEditOutlineOutlinedIcon />
+        </IconButton>
+        <IconButton style={{ color: "white" }}>
+          <PlaylistAddOutlinedIcon />
+        </IconButton>
+        <IconButton style={{ color: "white" }}>
+          <FilterListOutlinedIcon />
+        </IconButton>
       </ul>
     </div>
   );

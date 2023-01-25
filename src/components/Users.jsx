@@ -1,9 +1,8 @@
-import React from 'react'
+import React, { useState, useEffect } from "react";
+import Header from "./Header";
 
 const Users = () => {
-  return (
-    <div>Users</div>
-  )
-}
+  return <div><Header>Клиенты</Header></div>;
+};
 
-export default Users
+export default Users;

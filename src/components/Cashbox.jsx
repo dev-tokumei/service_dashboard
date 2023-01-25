@@ -1,8 +1,9 @@
 import React from 'react'
+import Header from './Header'
 
 const Cashbox = () => {
   return (
-    <div>Cashbox</div>
+    <div><Header>Платежи</Header></div>
   )
 }
 
