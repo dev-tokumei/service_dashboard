@@ -29,7 +29,9 @@ const Todo = () => {
           <SearchInput />
         </div>
       </nav>
-      <div className="w-full h-[60px] p-2 text-[1.25rem] border-b border-gray-600 text-blue-400 font-medium">Просрочены</div>
+      <div className="w-full h-[60px] p-2 text-[1.25rem] border-b border-gray-600 text-blue-400 font-medium">
+        Просрочены
+      </div>
     </div>
   );
 };
