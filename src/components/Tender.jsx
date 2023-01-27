@@ -1,9 +1,12 @@
 import React from 'react'
 import Header from './Header'
+import SearchInput from './ui/SearchInput'
 
 const Tender = () => {
   return (
-    <div><Header>Объявление</Header></div>
+    <div className='p-1'><Header>Объявление</Header>
+    <SearchInput/>
+    </div>
   )
 }
 
