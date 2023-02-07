@@ -1,5 +1,5 @@
 import React from "react";
-import logo from "../assets/logo.png";
+import logo from "../../assets/logo.png";
 import { Link } from "react-router-dom";
 import AttachMoneyIcon from "@mui/icons-material/AttachMoneyOutlined";
 import PeopleOutlineOutlinedIcon from "@mui/icons-material/PeopleOutlineOutlined";
@@ -15,7 +15,7 @@ import { IconButton } from "@mui/material";
 
 const Navbar = () => {
   return (
-    <nav className="w-[60px] flex flex-col  overflow-auto h-screen justify-between border-right fixed bg_color">
+    <nav className="w-[60px] flex flex-col  overflow-auto h-screen justify-between border-right fixed z-[-10px] bg_color">
       <div className="h-[550px] flex flex-col justify-between">
         <img className="mt-2 cursor-pointer" src={logo} alt="logo" />
         <div className="place-self-center h-[40px]">

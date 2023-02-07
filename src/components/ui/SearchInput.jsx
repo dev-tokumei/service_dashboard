@@ -1,5 +1,4 @@
 import React from "react";
-import search from "../../assets/icons/search.png";
 import SearchOutlinedIcon from "@mui/icons-material/SearchOutlined";
 import { IconButton } from "@mui/material";
 

@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import SearchInput from "./ui/SearchInput";
+import SearchInput from "../ui/SearchInput";
 import PlaylistAddOutlinedIcon from "@mui/icons-material/PlaylistAddOutlined";
 import FilterListOutlinedIcon from "@mui/icons-material/FilterListOutlined";
 import ModeEditOutlineOutlinedIcon from "@mui/icons-material/ModeEditOutlineOutlined";

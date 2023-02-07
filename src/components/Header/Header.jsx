@@ -4,7 +4,7 @@ import NotificationsNoneOutlinedIcon from "@mui/icons-material/NotificationsNone
 import AccountCircleOutlinedIcon from "@mui/icons-material/AccountCircleOutlined";
 
 const Header = ({ children }) => {
-  return (
+  return ( 
     <div className="w-full flex justify-between h-[60px] items-center pt-3 p-2 bg_color">
       <h1 className="w-[100px] font-bold text-[15px] ">{children}</h1>
       <div className="flex w-[250px] h-full justify-between items-center">

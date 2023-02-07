@@ -1,25 +1,25 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import AllOrder from "./components/AllOrder";
-import Cashbox from "./components/Cashbox";
-import Help from "./components/Help";
-import Market from "./components/Market";
-import Navbar from "./components/Navbar";
-import Report from "./components/Report";
-import Setting from "./components/Setting";
-import Tender from "./components/Tender";
+import Orders from "./components/Orders/Orders";
+import Cashbox from "./components/Cashbox/Cashbox";
+import Help from "./components/Help/Help";
+import Market from "./components/Market/Market";
+import Navbar from "./components/Navbar/Navbar";
+import Report from "./components/Report/Report";
+import Setting from "./components/Settings/Setting";
+import Tender from "./components/Tender/Tender";
 import Todo from "./components/Todo/Todo";
-import Users from "./components/Users";
-import Invertory from "./components/Invertory";
+import Users from "./components/Users/Users";
+import Invertory from "./components/Inventory/Invertory";
 
 const App = () => {
   return (
-    <div className="App bg_color ">
-      <Router>
+    <Router>
+      <div className="container bg_color w-full ">
         <Navbar />
         <div className="w-[95%] ml-[70px] bg_color">
           <Routes>
-            <Route path="/order" element={<AllOrder />} />
+            <Route path="/order" element={<Orders />} />
             <Route path="/task" element={<Todo />} />
             <Route path="/cashbox" element={<Cashbox />} />
             <Route path="/users" element={<Users />} />
@@ -31,8 +31,8 @@ const App = () => {
             <Route path="/help" element={<Help />} />
           </Routes>
         </div>
-      </Router>
-    </div>
+      </div>
+    </Router>
   );
 };
 
