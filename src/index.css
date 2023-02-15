@@ -20,6 +20,18 @@ code {
   box-sizing: border-box;
 }
 
+input[type="date"] {
+  background: rgb(35, 44, 40);
+}
+
+::-webkit-calendar-picker-indicator {
+  background-color: #fff;
+  color: aliceblue;
+  padding: 5px;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
 .bg_color {
   background-color: rgb(35, 44, 40);
   color: rgb(225, 225, 225);
@@ -27,11 +39,6 @@ code {
 
 button {
   color: white;
-}
-
-body {
-  background-color: rgb(35, 44, 40);
-  color: rgb(225, 225, 225);
 }
 
 .border-right {
@@ -43,3 +50,67 @@ body {
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.css-169iwlq-MuiCalendarPicker-root {
+  background-color: rgb(67, 81, 75) !important;
+  color: #fff !important;
+}
+
+.css-1sumxir-MuiFormLabel-root-MuiInputLabel-root {
+  color: rgb(225, 225, 225);
+}
+
+.css-nqokmp {
+  background-color: rgb(35, 44, 40) !important;
+}
+
+.css-195y93z-MuiButtonBase-root-MuiPickersDay-root:not(.Mui-selected) {
+  background-color: rgb(67, 81, 75) !important;
+}
+
+.css-sletql:hover {
+  background-color: rgba(255, 255, 255, 0.08) !important;
+}
+
+.css-bkrceb-MuiButtonBase-root-MuiPickersDay-root {
+  background-color: rgb(34, 44, 40) !important;
+  color: #fff !important;
+}
+
+.css-bkrceb-MuiButtonBase-root-MuiPickersDay-root:hover {
+  background-color: rgba(255, 255, 255, 0.08) !important;
+}
+
+.css-195y93z-MuiButtonBase-root-MuiPickersDay-root:hover {
+  background-color: rgba(0, 0, 0, 0.04) !important;
+}
+
+.css-o9k5xi-MuiInputBase-root-MuiOutlinedInput-root {
+  width: 360px !important;
+  border-radius: 10px !important;
+  border: 1px solid #ccc;
+}
+
+/* .css-1anqmj6-MuiPopper-root-MuiPickersPopper-root {
+  position: absolute;
+  transform: translate3d(380.2px, 83.2px, 0px);
+} */
+
+/* .css-1u3bzj6-MuiFormControl-root-MuiTextField-root {
+  margin-top: 20px !important;
+} */
+
+.css-1jm66jt-MuiClockPicker-root {
+  background-color: rgb(67, 81, 75) !important;
+  color: #fff !important;
+}
+
+.css-qklzlb-MuiDayPicker-header {
+  background-color: rgb(67, 81, 75) !important;
+  color: #fff !important;
+}
+
+.css-sf5t6v-PrivatePickersSlideTransition-root-MuiDayPicker-slideTransition {
+  background-color: rgb(67, 81, 75) !important;
+  color: #fff !important;
+}

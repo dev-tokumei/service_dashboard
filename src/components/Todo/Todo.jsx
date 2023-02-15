@@ -42,13 +42,6 @@ const Todo = () => {
       <div className="w-full h-[60px] p-2 text-[1.25rem] border-b border-gray-600 text-blue-400 font-medium">
         Просрочены
       </div>
-      {/* <Dialog open={isModal} onClose={onClose}>
-        <DialogTitle>Hello</DialogTitle>
-        <div>hello</div>
-        <DialogActions>
-          <Button onClick={()=> dispatch(onClose())}>Отмена</Button>
-        </DialogActions>
-      </Dialog> */}
       <AddButton setModal={onOpen} />
       {isModal && <TodoModal onOpen={isModal} />}
       <EmptyPage />
