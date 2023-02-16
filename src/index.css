@@ -57,7 +57,7 @@ button {
 }
 
 .css-1sumxir-MuiFormLabel-root-MuiInputLabel-root {
-  color: rgb(225, 225, 225);
+  color: rgb(225, 225, 225) !important;
 }
 
 .css-nqokmp {
@@ -90,15 +90,6 @@ button {
   border-radius: 10px !important;
   border: 1px solid #ccc;
 }
-
-/* .css-1anqmj6-MuiPopper-root-MuiPickersPopper-root {
-  position: absolute;
-  transform: translate3d(380.2px, 83.2px, 0px);
-} */
-
-/* .css-1u3bzj6-MuiFormControl-root-MuiTextField-root {
-  margin-top: 20px !important;
-} */
 
 .css-1jm66jt-MuiClockPicker-root {
   background-color: rgb(67, 81, 75) !important;
