@@ -74,13 +74,18 @@ const OrderModal = ({ onOpen }) => {
                   </div>
                 </div>
                 <br />
-                <TextField fullWidth label='Клиент*' id='fullWidth' />
+                <TextField
+                  sx={{
+                    label: { color: 'white' },
+                  }}
+                  fullWidth
+                  label='Клиент*'
+                  id='fullWidth'
+                />
                 <br />
                 <TextField
                   sx={{
                     label: { color: 'white' },
-                    borderColor: 'red',
-                    borderRadius: 10,
                   }}
                   fullWidth
                   label='Телефон'
@@ -88,13 +93,23 @@ const OrderModal = ({ onOpen }) => {
                 />
                 <br />
                 <TextField
+                  sx={{
+                    label: { color: 'white' },
+                  }}
                   color='primary'
                   fullWidth
                   label='Почта'
                   id='fullWidth'
                 />
                 <br />
-                <TextField fullWidth label='Откуда узнал' id='fullWidth' />
+                <TextField
+                  sx={{
+                    label: { color: 'white' },
+                  }}
+                  fullWidth
+                  label='Откуда узнал'
+                  id='fullWidth'
+                />
                 <br />
                 <br />
                 <h1 className='text-md'>Дополнительно</h1>
@@ -104,19 +119,68 @@ const OrderModal = ({ onOpen }) => {
                   <h1 className='text-start'>Информация</h1>
                 </div>
                 <br />
-                <TextField fullWidth label='Причина обрашения' id='fullWidth' />
+                <TextField
+                  sx={{
+                    label: { color: 'white' },
+                  }}
+                  fullWidth
+                  label='Причина обрашения'
+                  id='fullWidth'
+                />
                 <br />
-                <TextField fullWidth label='Внешный вид' id='fullWidth' />
+                <TextField
+                  sx={{
+                    label: { color: 'white' },
+                  }}
+                  fullWidth
+                  label='Внешный вид'
+                  id='fullWidth'
+                />
                 <br />
-                <TextField fullWidth label='Вид устройства' id='fullWidth' />
+                <TextField
+                  sx={{
+                    label: { color: 'white' },
+                  }}
+                  fullWidth
+                  label='Вид устройства'
+                  id='fullWidth'
+                />
                 <br />
-                <TextField fullWidth label='IMEI/SN' id='fullWidth' />
+                <TextField
+                  sx={{
+                    label: { color: 'white' },
+                  }}
+                  fullWidth
+                  label='IMEI/SN'
+                  id='fullWidth'
+                />
                 <br />
-                <TextField fullWidth label='Модель' id='fullWidth' />
+                <TextField
+                  sx={{
+                    label: { color: 'white' },
+                  }}
+                  fullWidth
+                  label='Модель'
+                  id='fullWidth'
+                />
                 <br />
-                <TextField fullWidth label='Комплектация' id='fullWidth' />
+                <TextField
+                  sx={{
+                    label: { color: 'white' },
+                  }}
+                  fullWidth
+                  label='Комплектация'
+                  id='fullWidth'
+                />
                 <br />
-                <TextField fullWidth label='Пароль' id='fullWidth' />
+                <TextField
+                  sx={{
+                    label: { color: 'white' },
+                  }}
+                  fullWidth
+                  label='Пароль'
+                  id='fullWidth'
+                />
               </div>
             </main>
           </div>
