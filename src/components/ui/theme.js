@@ -10,6 +10,9 @@ export const theme = createTheme({
     MuiOutlinedInput: {
       styleOverrides: {
         root: {
+          '& .MuiInputBase-root': {
+            paddingLeft: 10,
+          },
           '& .MuiOutlinedInput-notchedOutline': {
             border: `1px solid grey`,
           },

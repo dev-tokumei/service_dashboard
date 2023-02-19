@@ -15,15 +15,20 @@ import { ThemeProvider } from '@mui/material/styles';
 import { theme } from '../ui/theme';
 
 const OrderModal = ({ onOpen }) => {
+  const styles = (theme) => ({
+    thaiTextFieldInputProps: {
+      paddingTop: '5px',
+    },
+  });
   const dispatch = useDispatch();
 
   return (
     <ThemeProvider theme={theme}>
       <Modal open={onOpen} onClose={() => dispatch(onClose())}>
-        <div className='flex justify-center items-start bg_color h-full p-10'>
+        <div className='flex justify-center items-start bg_color h-full p-10 overflow-auto'>
           <div className='w-[960px]'>
             <header className='flex w-full justify-between mb-10'>
-              <div className='flex items-center justify-between w-[500px]'>
+              <div className='flex items-center justify-between flex-wrap w-[500px]'>
                 <h1 className='font-bold text-2xl mr-2'>Заказ</h1>
                 <FormControlLabel
                   color='wihte'
@@ -54,8 +59,8 @@ const OrderModal = ({ onOpen }) => {
                 </IconButton>
               </div>
             </header>
-            <main className='w-full flex justify-between item-center'>
-              <div className='flex w-[460px] flex-col '>
+            <main className='w-full flex md:flex justify-between item-center '>
+              <div className='w-[460px] grid grid_colums '>
                 <div className='w-full flex justify-between items-center'>
                   <div>
                     <h1>Клиент</h1>
@@ -73,52 +78,79 @@ const OrderModal = ({ onOpen }) => {
                     />
                   </div>
                 </div>
-                <br />
-                <TextField
-                  sx={{
-                    label: { color: 'white' },
-                  }}
-                  fullWidth
-                  label='Клиент*'
-                  id='fullWidth'
-                />
-                <br />
-                <TextField
-                  sx={{
-                    label: { color: 'white' },
-                  }}
-                  fullWidth
-                  label='Телефон'
-                  id='fullWidth'
-                />
-                <br />
-                <TextField
-                  sx={{
-                    label: { color: 'white' },
-                  }}
-                  color='primary'
-                  fullWidth
-                  label='Почта'
-                  id='fullWidth'
-                />
-                <br />
-                <TextField
-                  sx={{
-                    label: { color: 'white' },
-                  }}
-                  fullWidth
-                  label='Откуда узнал'
-                  id='fullWidth'
-                />
-                <br />
-                <br />
-                <h1 className='text-md'>Дополнительно</h1>
+                <div className='w-[460px] h-[353.6px] grid grid_colums '>
+                  <TextField
+                    inputProps={styles}
+                    pt='2'
+                    sx={{
+                      label: { color: 'white' },
+                    }}
+                    fullWidth
+                    label='Клиент*'
+                    id='fullWidth'
+                  />
+                  <TextField
+                    sx={{
+                      label: { color: 'white' },
+                    }}
+                    fullWidth
+                    label='Телефон'
+                    id='fullWidth'
+                  />
+                  <TextField
+                    sx={{
+                      label: { color: 'white' },
+                    }}
+                    color='primary'
+                    fullWidth
+                    label='Почта'
+                    id='fullWidth'
+                  />
+                  <TextField
+                    sx={{
+                      label: { color: 'white' },
+                    }}
+                    pt='20'
+                    fullWidth
+                    label='Откуда узнал'
+                    id='fullWidth'
+                  />
+                </div>
+                <div className='grid grid_colums '>
+                  <h1 className='text-md'>Дополнительно</h1>
+                  <TextField
+                    sx={{
+                      label: { color: 'white' },
+                    }}
+                    pt='20'
+                    fullWidth
+                    label='Передоплата, TJS'
+                    id='fullWidth'
+                  />
+                  <TextField
+                    sx={{
+                      label: { color: 'white' },
+                    }}
+                    pt='20'
+                    fullWidth
+                    label='Исполнитель'
+                    id='fullWidth'
+                  />
+                  <TextField
+                    sx={{
+                      label: { color: 'white' },
+                    }}
+                    pt='20'
+                    fullWidth
+                    label='Менеджер'
+                    id='fullWidth'
+                  />
+                </div>
               </div>
-              <div className='flex w-[460px] flex-col '>
+              <div className=' w-[460px] grid grid_colums '>
                 <div className='w-full flex justify-start items-centet pt-2 h-[42px]'>
                   <h1 className='text-start'>Информация</h1>
                 </div>
-                <br />
                 <TextField
                   sx={{
                     label: { color: 'white' },
@@ -127,7 +159,6 @@ const OrderModal = ({ onOpen }) => {
                   label='Причина обрашения'
                   id='fullWidth'
                 />
-                <br />
                 <TextField
                   sx={{
                     label: { color: 'white' },
@@ -136,7 +167,6 @@ const OrderModal = ({ onOpen }) => {
                   label='Внешный вид'
                   id='fullWidth'
                 />
-                <br />
                 <TextField
                   sx={{
                     label: { color: 'white' },
@@ -145,7 +175,6 @@ const OrderModal = ({ onOpen }) => {
                   label='Вид устройства'
                   id='fullWidth'
                 />
-                <br />
                 <TextField
                   sx={{
                     label: { color: 'white' },
@@ -154,7 +183,6 @@ const OrderModal = ({ onOpen }) => {
                   label='IMEI/SN'
                   id='fullWidth'
                 />
-                <br />
                 <TextField
                   sx={{
                     label: { color: 'white' },
@@ -163,7 +191,6 @@ const OrderModal = ({ onOpen }) => {
                   label='Модель'
                   id='fullWidth'
                 />
-                <br />
                 <TextField
                   sx={{
                     label: { color: 'white' },
@@ -172,7 +199,6 @@ const OrderModal = ({ onOpen }) => {
                   label='Комплектация'
                   id='fullWidth'
                 />
-                <br />
                 <TextField
                   sx={{
                     label: { color: 'white' },
@@ -183,6 +209,16 @@ const OrderModal = ({ onOpen }) => {
                 />
               </div>
             </main>
+            <footer className='w-full flex flex-col mt-10 '>
+              <div className='w-full flex justify-start items-centet mb-5 h-[42px]'>
+                <h1 className='text-start'>Товары и услуги</h1>
+              </div>
+              <div className='w-full flex items-center border-[1px] border-slate-300 h-14 rounded-md bg-green mt-5 mb-5'></div>
+              <div className='w-full flex justify-start items-centet mt-2 h-[42px]'>
+                <h1 className='text-start pt-2'>Печать</h1>
+              </div>
+              <div className='w-full flex items-center border-[1px] border-slate-300 h-14 rounded-md bg-green mt-5 mb-5'></div>
+            </footer>
           </div>
         </div>
       </Modal>

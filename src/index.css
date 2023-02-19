@@ -20,12 +20,7 @@ code {
   box-sizing: border-box;
 }
 
-::-webkit-calendar-picker-indicator {
-  background-color: #fff;
-  color: aliceblue;
-  padding: 5px;
-  cursor: pointer;
-  border-radius: 3px;
+@media screen and (max-width: 768px) {
 }
 
 .bg_color {
@@ -100,4 +95,9 @@ button {
 .css-sf5t6v-PrivatePickersSlideTransition-root-MuiDayPicker-slideTransition {
   background-color: rgb(67, 81, 75) !important;
   color: #fff !important;
+}
+
+.grid_colums {
+  gap: 40px;
+  grid-template-rows: minmax(min-content, max-content);
 }
