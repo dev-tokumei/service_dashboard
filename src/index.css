@@ -21,6 +21,9 @@ code {
 }
 
 @media screen and (max-width: 768px) {
+  .tablet {
+    flex-direction: column;
+  }
 }
 
 .bg_color {
