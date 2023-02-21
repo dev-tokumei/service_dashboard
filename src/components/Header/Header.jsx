@@ -20,7 +20,9 @@ const Header = ({ children }) => {
           </IconButton>
         </Tooltip>
         <p className='text-[14px] '>Smart Client Office</p>
-        <AccountCircleOutlinedIcon />
+        <IconButton style={{ color: 'wheat' }}>
+          <AccountCircleOutlinedIcon />
+        </IconButton>
       </div>
     </div>
   );
