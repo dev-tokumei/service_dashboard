@@ -7,6 +7,7 @@ import {
   Modal,
   Radio,
   TextField,
+  Tooltip,
 } from '@mui/material';
 import React from 'react';
 import { useDispatch } from 'react-redux';
@@ -42,15 +43,19 @@ const OrderModal = ({ onOpen }) => {
               />
             </div>
             <div className='flex items-center'>
-              <IconButton style={{ color: 'white' }}>
-                <AttachFileIcon />
-              </IconButton>
-              <IconButton
-                sx={{ color: 'white' }}
-                onClick={() => dispatch(onClose())}
-              >
-                <CloseIcon />
-              </IconButton>
+              <Tooltip title='Добавить файлы'>
+                <IconButton style={{ color: 'white' }}>
+                  <AttachFileIcon />
+                </IconButton>
+              </Tooltip>
+              <Tooltip title='Закрыть'>
+                <IconButton
+                  sx={{ color: 'white' }}
+                  onClick={() => dispatch(onClose())}
+                >
+                  <CloseIcon />
+                </IconButton>
+              </Tooltip>
             </div>
           </header>
           <main className='w-full flex md:flex mobile tablet justify-between item-center '>
