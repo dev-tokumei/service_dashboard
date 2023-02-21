@@ -7,6 +7,15 @@ export const theme = createTheme({
     },
   },
   components: {
+    MuiTooltip: {
+      styleOverrides: {
+        tooltip: {
+          fontSize: "14px",
+          color: "black",
+          backgroundColor: "#69f0ae"
+        }
+      }
+    },
     MuiOutlinedInput: {
       styleOverrides: {
         root: {
