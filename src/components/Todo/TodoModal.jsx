@@ -1,4 +1,4 @@
-import { Button, IconButton, Modal, TextField } from '@mui/material';
+import { Button, IconButton, Modal, TextField, Tooltip } from '@mui/material';
 import React, { useState } from 'react';
 import CloseIcon from '@mui/icons-material/Close';
 import { onClose } from '../../store/slices/modalSlice';
@@ -18,12 +18,14 @@ const TodoModal = ({ onOpen }) => {
         <div className='w-[448px] h-[518px] rounded-lg bg_color p-5 absolute top-20 left-[35%]'>
           <div className='w-full flex h-[50px] justify-between items-center p-2'>
             <h1 className='font-bold text-[20px]'>Задача</h1>
-            <IconButton
-              style={{ color: 'white' }}
-              onClick={() => dispatch(onClose())}
-            >
-              <CloseIcon />
-            </IconButton>
+            <Tooltip title='Закрыть'>
+              <IconButton
+                style={{ color: 'white' }}
+                onClick={() => dispatch(onClose())}
+              >
+                <CloseIcon />
+              </IconButton>
+            </Tooltip>
           </div>
           <form>
             <div className='flex flex-col items-center justify-between pt-8'>
@@ -37,11 +39,6 @@ const TodoModal = ({ onOpen }) => {
                 type='text'
                 placeholder='Исполнитель'
               />
-              {/* <input
-              className="bg_color focus:outline-none w-[360px] border-slate-300 focus:border-sky-500 focus:ring-sky-500 focus:ring-1 border rounded-[10px] h-[56px] p-4 mt-7"
-              type="date"
-              placeholder="Срок"
-            /> */}
               <LocalizationProvider dateAdapter={AdapterDayjs}>
                 <DateTimePicker
                   label='Срок'

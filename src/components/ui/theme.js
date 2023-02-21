@@ -10,11 +10,11 @@ export const theme = createTheme({
     MuiTooltip: {
       styleOverrides: {
         tooltip: {
-          fontSize: "14px",
-          color: "black",
-          backgroundColor: "#69f0ae"
-        }
-      }
+          fontSize: '14px',
+          color: 'black',
+          backgroundColor: '#69f0ae',
+        },
+      },
     },
     MuiOutlinedInput: {
       styleOverrides: {
