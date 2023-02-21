@@ -4,9 +4,8 @@ import CloseIcon from '@mui/icons-material/Close';
 import { onClose } from '../../store/slices/modalSlice';
 import { useDispatch } from 'react-redux';
 import { LocalizationProvider } from '@mui/x-date-pickers/LocalizationProvider';
-import { DatePicker, DateTimePicker } from '@mui/x-date-pickers';
+import { DateTimePicker } from '@mui/x-date-pickers';
 import { AdapterDayjs } from '@mui/x-date-pickers/AdapterDayjs';
-import { Form } from 'react-router-dom';
 
 const TodoModal = ({ onOpen }) => {
   const dispatch = useDispatch();
