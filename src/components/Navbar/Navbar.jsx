@@ -20,7 +20,7 @@ const Navbar = () => {
         <img className='mt-2 cursor-pointer' src={logo} alt='logo' />
         <div className='place-self-center h-[40px]'>
           <Link to='/task'>
-            <Tooltip title='Задачи'>
+            <Tooltip title='Задачи' placement="right-start">
               <IconButton style={{ color: 'white' }}>
                 <CheckCircleOutlineOutlinedIcon />
               </IconButton>
@@ -29,7 +29,7 @@ const Navbar = () => {
         </div>
         <div className='place-self-center h-[40px]'>
           <Link to='/order'>
-            <Tooltip title='Заказы'>
+            <Tooltip title='Заказы' placement="right-start">
               <IconButton style={{ color: 'white' }}>
                 <MoveToInboxOutlinedIcon />
               </IconButton>
@@ -38,7 +38,7 @@ const Navbar = () => {
         </div>
         <div className='place-self-center h-[40px]'>
           <Link to='/cashbox'>
-            <Tooltip title='Платежи'>
+            <Tooltip title='Платежи' placement="right-start" >
               <IconButton style={{ color: 'white' }}>
                 <AttachMoneyIcon />
               </IconButton>
@@ -47,7 +47,7 @@ const Navbar = () => {
         </div>
         <div className='place-self-center h-[40px]'>
           <Link to='/users'>
-            <Tooltip title='Клиенты'>
+            <Tooltip title='Клиенты' placement="right-start" >
               <IconButton style={{ color: 'white' }}>
                 <PeopleOutlineOutlinedIcon />
               </IconButton>
@@ -56,7 +56,7 @@ const Navbar = () => {
         </div>
         <div className='place-self-center h-[40px]'>
           <Link to='/inventory'>
-            <Tooltip title='Склад'>
+            <Tooltip title='Склад' placement="right-start" >
               <IconButton style={{ color: 'white' }}>
                 <ViewCompactOutlinedIcon />
               </IconButton>
@@ -65,7 +65,7 @@ const Navbar = () => {
         </div>
         <div className='place-self-center h-[40px]'>
           <Link to='/market'>
-            <Tooltip title='Магазин'>
+            <Tooltip title='Магазин' placement="right-start" >
               <IconButton style={{ color: 'white' }}>
                 <ShoppingCartOutlinedIcon />
               </IconButton>
@@ -74,7 +74,7 @@ const Navbar = () => {
         </div>
         <div className='place-self-center h-[40px]'>
           <Link to='/report'>
-            <Tooltip title='Отчети'>
+            <Tooltip title='Отчети' placement="right-start" >
               <IconButton style={{ color: 'white' }}>
                 <AssessmentOutlinedIcon />
               </IconButton>
@@ -83,7 +83,7 @@ const Navbar = () => {
         </div>
         <div className='place-self-center h-[40px]'>
           <Link to='/tender'>
-            <Tooltip title='Объявление'>
+            <Tooltip title='Объявление' placement="right-start" >
               <IconButton style={{ color: 'white' }}>
                 <WhatshotOutlinedIcon />
               </IconButton>
@@ -92,7 +92,7 @@ const Navbar = () => {
         </div>
         <div className='place-self-center h-[40px]'>
           <Link to='/setting'>
-            <Tooltip title='Настройка'>
+            <Tooltip title='Настройка' placement="right-start" >
               <IconButton style={{ color: 'white' }}>
                 <SettingsOutlinedIcon />
               </IconButton>
@@ -102,7 +102,7 @@ const Navbar = () => {
       </div>
       <div className='place-self-center mb-8 h-[40px]'>
         <Link to='/help'>
-          <Tooltip title='Справка'>
+          <Tooltip title='Справка' placement="right-start" >
             <IconButton style={{ color: 'white' }}>
               <HelpOutlineOutlinedIcon />
             </IconButton>
