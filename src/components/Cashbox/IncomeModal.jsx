@@ -3,7 +3,7 @@ import React from 'react';
 
 const IncomeModal = () => {
   return (
-    <Modal>
+    <Modal open={isModal}>
       <div>jgod</div>
     </Modal>
   );

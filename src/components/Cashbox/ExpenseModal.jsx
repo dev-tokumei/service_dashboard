@@ -1,9 +1,10 @@
 import { Modal } from '@mui/material';
 import React from 'react';
 
-const ExpenseModal = () => {
+const ExpenseModal = ({ isModal }) => {
+  console.log(isModal);
   return (
-    <Modal>
+    <Modal open={isModal}>
       <div>hello</div>
     </Modal>
   );
