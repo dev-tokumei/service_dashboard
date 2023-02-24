@@ -6,7 +6,6 @@ import EmptyPage from '../../pages/EmptyPage';
 import { onOpen } from '../../store/slices/modalSlice';
 import TodoModal from './TodoModal';
 import { useDispatch, useSelector } from 'react-redux';
-import Modal from '../ui/Modal';
 import {
   Button,
   Dialog,
